@@ -6,4 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".ContactActivity">
 
+    <ImageView
+        android:id="@+id/imageViewLinkeding"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_linkedin_512dp" />
+
+    <ImageView
+        android:id="@+id/imageViewFacebook"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLinkeding"
+        app:srcCompat="@drawable/ic_facebook_512dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPhone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLinkeding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_mobile_screen_share_black_18dp" />
+
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.aboutme_157.MessageFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFacebook" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
